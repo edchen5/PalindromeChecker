@@ -4,12 +4,12 @@ public void setup()
 
   println("there are " + lines.length + " lines");
 
-  for (int i = 0; i < lines.length; i++) 
+  for (int i = 0; i < lines.length; i++)
+
     if(palindrome(lines[i]) == true)
       println(lines[i] + " IS a palindrome.");
     else
       println(lines[i] + " is NOT a palindrome.");
-
 }
 
 public boolean palindrome(String sWord)
@@ -45,7 +45,8 @@ public String noSpaces(String sWord)
   return word;
 }
 
-public String onlyLetters(String sString){
+public String onlyLetters(String sString)
+{
   String temp = new String();
   
   for(int i = 0; i < sString.length(); i++)
